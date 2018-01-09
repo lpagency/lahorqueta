@@ -1,0 +1,87 @@
+{% extends "../base.html" %}
+{% block title %}
+    {{ site.name }}
+{% end %}
+{% block css %}
+<link href="https://fonts.googleapis.com/css?family=Lato" type="text/css"/>
+{% if is_admin %}
+<link rel="stylesheet" href="{{ site_base }}/static/css/textbox_io.css" type="text/css">
+<link rel="stylesheet" href="{{ site_base }}/static/css/detalle_articulos.css">
+<script type="text/javascript" src="{{ site_base }}/static/js/article/detail.js"></script>
+{% end %}
+<style type="text/css">
+    html, body{
+       height: 100%;
+    }
+
+      @media screen and (max-width: 700px){
+        .ol{
+          visibility: hidden;
+        }
+      
+        .franja-color{
+            background: transparent;
+        }
+    }
+
+
+</style>
+{% end %}
+
+{% block header %}
+{% include '../home/header.html' %}
+{% end %}
+
+{% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
+{% end %}
+
+{% block body %}
+
+        <!-- registration -->
+        
+<div class="">
+      <div class="mobile-det" style="background:url('{{ article['thumb_500'] }}'); height:400px; background-size:cover; margin-top: -20px;">
+       
+        <img class="fondo-articulo hidden" src="{{ article["thumb_500"] }}" class="img-responsive lazy" data-original="{{ article["url"] }}" alt="item">
+       </div>
+</div>
+
+
+
+        <div class="container min" >
+         <!--    <div class="row cero" > -->
+                <div class="col-sm-12">
+                        <input type="hidden" id="article-description-ajax-url" value="{{ site.url }}article/update-description">
+                        <input type="hidden" id="article-content-id" value="{{article['id']}}">
+                        <div class="col-sm-12 blog-content" style="margin-bottom: 30px;">
+                            <h1 class="h1-art til-ban">
+                                {{ article["title"] }}
+                            </h1>
+                        </div>
+
+                        <div class="content articulo-text" style="">
+                            <div class="col-sm-12 especial">
+                                <h2 class="h2-art til-ban-2">{{ article["caption"] }}
+                             
+                                </h2>
+                            </div>
+                            
+                           <!--  <div class="col-sm-12 especial"> -->
+                           <div align="center">
+                               <div class="col-sm-12">
+                                   <div class="">
+                                        <div id="description" class="p-art dan">
+                                            {{ article["description"] }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+
+ 
+
+{% include '../home/footer.html' %}
+{% end %}

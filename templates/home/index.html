@@ -1,0 +1,226 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+{% include '../home/header.html' %}
+{% end %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bodegas/dist/bodegas.client.css">
+{% end %}
+
+{% block javascript %}
+
+<script type='text/javascript'>
+    $("#testButton").live("touchstart", function() {
+      $(this).addClass("active");
+    }).live("touchend", function() {
+      $(this).removeClass("active");
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+
+      $("#OpenAlert").click();
+
+    var base_url = $.environmentVar(
+        'https://apibodegas.loadingplay.com/',
+        'https://apibodegas.loadingplay.com/',
+        'https://apibodegas.loadingplay.com/');
+    var checkout_url = $.environmentVar(
+        'https://pay.loadingplay.com',
+        'https://pay.loadingplay.com',
+        'https://pay.loadingplay.com');
+    var app_public = $.environmentVar(64,64,64);
+    var site_name = $.environmentVar('lahorqueta2', 'lahorqueta2', 'lahorqueta2');
+  
+
+        var config = {
+            'app_public' : app_public,
+            'base_url' : base_url,
+            'maxProducts' : 100,
+            'templateOrigin' : '#product_template',
+            'tag' : '',
+            'ignore_stock' : false,
+            'infinite_scroll': false,
+            'onLoad':function(products){
+               console.log(products);
+             }
+        };
+           $(document).ecommerce({
+         'app_public' :  app_public,
+         'animation' : 'simple',
+         'base_url' : base_url,
+         'checkout_url' :  checkout_url,
+         'products_per_page' : 9
+       });
+
+        $('.product-list').ecommerce('product_box', config);
+
+        $(document).on("click", ".subcateg", function(ev){
+            ev.preventDefault();
+            config.tag=$(this).attr('tag');
+            $(".product-list").html("");
+            $('.product-list').ecommerce('destroy');
+            $('.product-list').ecommerce(config);
+        });
+
+        // destacado categoria 2
+        // config.tag = 'destacado_categoria2';
+        // $('.product-list2').ecommerce('product_box', config);
+    });
+</script>
+
+
+{% end %}
+
+{% block body %}
+
+{% if is_admin %}
+{% set editabletext = 'editabletext' %}
+{% else %}
+{% set editabletext = '' %}
+{% end %}
+
+
+<!-- *contenido* -->
+
+<section>
+  <div class="">
+    <div class="img-mobile parallax" style="background:url('{{ read_image(site.name + '_home',500) }}'); min-height: 530px;  background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover; margin-top: -20px; filter: grayscale(0%) brightness(75%);-webkit-filter: grayscale(0%) brightness(75%);-moz-filter: grayscale(0%) brightness(75%);-ms-filter: grayscale(0%) brightness(75%);-o-filter: grayscale(0%) brightness(75%);" data-img-width="1600" data-img-height="1064" data-diff="100">
+        {% if is_admin %}
+        <div class="image-upload visible-movil" style="top: 180px;">
+            <label for="img_home">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_home" name="image" id="img_home">
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_home" src="{{ read_image(site.name + '_home', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home',500) }}'" class="img-principal hidden" alt="item">
+    </div>
+        
+        <div class="col-md-12 col-sm-12 col-xs-12">
+           <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_tex' }}"> {{ read_text(site.name +  '_tex') }}</div>
+           <div class="texto-peque {{editabletext}}" text-id="{{ site.name + '_tex_2' }}"> {{ read_text(site.name +  '_tex_2') }}</div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div align="center">
+            <div style="position:relative;">
+              <div class="boton-pro">
+                <a id="{{ site.name + '_' }}" href="{{ read_link(site.name + '_butt') }}">
+                 <div class="texto-play {{editabletext}}" text-id="{{ site.name + '_pay' }}"> {{ read_text(site.name +  '_pay') }}</div> 
+                 </a>             
+                   {% if is_admin %}
+                   <img class="change-image editablelink marc" link-id="{{ site.name + '_butt' }}" content="{{ read_link(site.name + '_butt') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                   {% end %}
+               </div>
+           </div>
+         </div>
+       </div>
+       
+    </div>
+</section>
+
+
+<section>
+ <div class="container min">
+   <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="frase-1 {{editabletext}}" text-id="{{ site.name + '_tex_4' }}"> {{ read_text(site.name +  '_tex_4') }}</div>
+
+    <div align="center">
+       <div class="frase-2 {{editabletext}}" text-id="{{ site.name + '_tex_5' }}"> {{ read_text(site.name +  '_tex_5') }}</div>
+    </div>
+  </div>
+ </div>
+</section>
+
+
+<section style="">
+    <!-- *articulos* -->
+
+     <div class="container min">
+        <!--   <div class="row"> -->
+        {{ getArticleList(limit=1, html="page/article_home.html", tag='home,posicion 1') }}
+        {{ getArticleList(limit=1, html="page/article_home.html", tag='home,posicion 2') }}
+        {{ getArticleList(limit=1, html="page/article_home.html", tag='home,posicion 3') }}
+        {{ getArticleList(limit=1, html="page/article_home.html", tag='home,posicion 4') }}
+        <!--  </div> -->
+    </div>
+        
+  
+</section>
+
+
+<section id="contenedor">
+    <div class="container min">
+        <div class="row spa article_list">
+           {{ getArticleList(tag='home,-posicion 1,-posicion 2,-posicion 3,-posicion 4') }}
+        </div>
+    </div>
+
+</section>
+
+
+<!-- *********CATEGORIAS******** -->
+    <section class="h_submenu cubrecama hidden-xs">
+        <div class="container min" style="padding-top: 7em;padding-bottom: 33px;">
+            <div align="center">
+             <div class="gre">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                <a class="subcateg" tag="casa">Casa </a> 
+                /
+                <a class="subcateg" tag="terraza">Terraza</a>
+                /
+                <a class="subcateg" tag="jardin">Jardin</a>
+                /
+                <a class="subcateg" tag="navidad">Navidad</a>
+              </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***FIN CATEGORIAS***** -->
+
+
+<!-- *********PRODUCTOS****** -->
+<div class="container min">
+<section class="masonry-contained">
+    <div class="row">
+           <div align="center"> 
+              <div class="product-list">
+                  <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+              </div>
+            <div class="col-xs-12">
+              <div class="col-xs-12">
+                <div style="margin-top:45px;"></div>
+                  <button type="button" class="btn btn-default more-products" style="font-weight: 600;border-color: black;border-radius: 0px; margin-bottom: 100px;">Cargar más productos</button>
+              </div>
+            </div>
+            </div>
+          </div> 
+
+    </div>
+</section>
+</div>
+
+
+
+
+
+{% include '../home/footer.html' %}
+{% end %}
+
+

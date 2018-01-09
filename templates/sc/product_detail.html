@@ -1,0 +1,260 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+{% include '../home/header.html' %}
+{% end %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bodegas/dist/bodegas.client.css">
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/static/Swiper-3.4.2/dist/css/swiper.min.css">   
+<link rel="stylesheet" href="{{ site_base }}/static/css/ocul.css">
+<style type="text/css">
+
+
+</style>
+{% end %}
+
+{% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/product_detail.js"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/swiper.js"></script>
+<script type="text/javascript" src="{{ site_base }}/static/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+    <script type="text/javascript">
+        $('ul.nav div.dropdown').hover(function() 
+        {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+        }, function() 
+        {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+        });
+    </script>
+    
+
+<script type="text/javascript">
+
+    $(document).ready(function()
+    {
+        var base_url = $.environmentVar(
+            'https://apibodegas.loadingplay.com/',
+            'https://apibodegas.loadingplay.com/',
+            'https://apibodegas.loadingplay.com/');
+        var checkout_url = $.environmentVar(
+            'https://pay.loadingplay.com',
+            'https://pay.loadingplay.com',
+            'https://pay.loadingplay.com');
+        var app_public = $.environmentVar(64,64,64);
+        var site_name = $.environmentVar('lahorqueta2', 'lahorqueta2', 'lahorqueta2');
+
+
+        $(document).ecommerce('product_detail', {
+            'app_public' : app_public,
+            'base_url' : base_url,
+            'checkout_url': checkout_url,
+            'product_id' : {{ product_id }},
+            'container' : '.product-detail',
+            onLoad: function(product){
+
+                related(product.bullet_3);
+
+                if (product.bullet_1 != "" ){
+                    $.get(site_base + "/article/tag?tag="+product.bullet_1, function(data)
+                    {
+                        $("#article-reladed").html(data);
+                    });
+                }
+                            var mainImage = $("#mainImage");
+            $(".img-container img").hover(function(){
+             var src = $(this).attr("src");
+             $("#mainImage").attr("src",src);
+           });
+
+            mainImage.on("click",function(){
+              $(this).css("transform","scale(1.1)");
+            });
+
+            }
+
+        });
+
+        // productos relacionados
+        var related = function(tag)
+        {
+            var config = {
+                'app_public' : app_public,
+                'base_url' : base_url,
+                'maxProducts' : 8,
+                'templateOrigin' : '#product_template_home',
+                'tag' : '',
+                'ignore_stock' : true,
+                    'onLoad':function(){
+                         // $('.ellipsis').ellipsis();
+                         $(".ellipsis").dotdotdot();
+                     }
+                
+            };
+            $('.product-related').ecommerce('product_box', config);
+        };
+
+        setTimeout(function()
+        {
+
+            $(".item").each(function(){
+
+                if($(this).children(".little-2").hasClass("hidden"))
+                {
+                    console.log("qerqwr");
+                    $(this).remove();
+                }
+
+            });
+
+        },2000);
+    });
+
+</script>
+
+
+<script type="text/template" id="product_detail">
+ 
+    <div class="container min">
+        <div class="container">
+           <section class="fer">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                    <img class="{{! images[0]['thumb_500']|hide_if_empty}} little-2" src="{{! images[0]['thumb_500'] }}" onload="this.onload='';this.src={{! images[0]['thumb_500']}}" alt="Chania"  width="460" height="345">
+                    </div>
+                    
+                    <div class="item">
+                    <img class="{{! images[2]['thumb_500']|hide_if_empty }} little-2" src="{{! images[2]['thumb_500'] }}"  alt="Chania" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" width="460" height="345">
+                    </div>
+
+                    <div class="item">
+                    <img class="{{! images[3]['thumb_500']|hide_if_empty }} little-2" src="{{! images[3]['thumb_500'] }}" alt="Chania" onload="this.onload='';this.src={{! images[3]['thumb_500']}}"  width="460" height="345">
+                    </div>
+
+                    <div class="item">
+                    <img class="{{! images[4]['thumb_500']|hide_if_empty }} little-2" src="{{! images[4]['thumb_500'] }}" alt="Chania" onload="this.onload='';this.src={{! images[4]['thumb_500']}}"  width="460" height="345">
+                    </div>
+
+                    <div class="item">
+                    <img class="{{! images[5]['thumb_500']|hide_if_empty }} little-2" src="{{! images[5]['thumb_500'] }}" alt="Chania" onload="this.onload='';this.src={{! images[5]['thumb_500']}}"  width="460" height="345">
+                    </div>
+                    <div class="item">
+                    <img class="{{! images[1]['thumb_500']|hide_if_empty }} little-2" src="{{! images[1]['thumb_500'] }}" alt="Chania" onload="this.onload='';this.src={{! images[1]['thumb_500']}}"  width="460" height="345">
+                    </div>
+                    </div>
+                   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+
+
+                    </div>
+
+                    <div id="product-detail-id" class="col-md-6 col-sm-12 col-xs-12">
+                        <div align="center">
+                            <h1 class="name-detail" class="line" href="#">{{! name }}</h1>
+                            <div class="product-price original-de">{{! main_price|money }} </div>
+                            <div class="item__addtocart">
+                              <input type="text" value="1" name="quantity" class="prod">
+
+                              <button type="button" class="btn add-to-cart btn-success comprar" id="open-cart" data-toggle="modal" data-target="#myModal" product-upp="{{! upp }}" product-name="{{! name }}" product-price="{{! main_price }}" product-sku="{{! sku }}" product-id="{{! id }}" product-img="{{! images[0]['thumb_500'] }}" lp-cart-add>Comprar</button>
+
+                            </div>
+                            <div align="center">
+                            <div class="col-md-12 col-sm-12 col-xs-12 prin">
+                                <div class="texto-de">Descripción</div>
+                                <h3 class="descr_prod_detail ellipsis multiline">{{! description }}</h3>
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                <div class="product-price oferta-de hidden"> {{! promotion_price|money }} </div>
+                            </div>
+                            </div>
+                            <div class="texto-bu">{{! bullet_1 }}</div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                             <hr>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="" target="_blank">
+                             <img class="redes-detalle" src="https://7static.loadingplay.com/static/images/e967188caf7ec5836cf260322c775cd5_faazul.png">
+                             </a>
+                             <a href="" target="_blank">
+                             <img class="redes-detalle" src="https://84static.loadingplay.com/static/images/b52df0ce0094fafa7a3419004cd4dfc9_instaverde.png">
+                             </a>
+                             <a href="" target="_blank">
+                             <img class="redes-detalle" src="https://84static.loadingplay.com/static/images/29fcc23b0b1583b54fd6065f5ba41c68_pinrojo.png">
+                             </a>
+                            </div>
+                        </div>
+                            
+
+                     </div>
+            </section>
+            </div>
+            </div>
+
+</script>
+
+
+<!--
+{% end %} -->
+
+
+
+{% block body %}
+
+
+<div class="container min">
+    <div class="container min product-page"></div>
+    </div>
+</div>
+
+
+<div class="product-detail sun"></div>
+
+<!-- ***productos relacionados** -->
+<!-- <hr class="detail">
+<div class="container dano">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-relac text-center"><strong class="editabletext">Productos relacionados</strong></h1>
+            <hr class="lin">
+        </div>
+    </div>
+    <div class="row product-related">
+    </div>
+</div> -->
+
+<section>
+<div class="container min">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <h1 class="text-relac text-center"><strong class="editabletext"></strong></h1>
+        </div>
+    
+    <div class="product-related">
+
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+{% include '../home/footer.html' %}
+{% end %}

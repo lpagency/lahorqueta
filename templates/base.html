@@ -195,7 +195,7 @@
 <script type="text/x-template" id="shopping-cart-product">
 <tr>
     <td class="vert-align text-left">{{! name }}</td>
-    <td class="vert-align money">{{! price }}</td>
+    <td class="vert-align money">{{! price|money }}</td>
     <td class="vert-align">
         <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
             {{! quantity }}
@@ -211,7 +211,7 @@
 </thead>
 <tr>
     <td>Total:</td> 
-    <td id="total" class="money lib">{{! total }}</td>
+    <td id="total" class="money lib">{{! total|money }}</td>
     <td></td>
 </tr>
 </script>

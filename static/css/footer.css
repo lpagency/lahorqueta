@@ -122,12 +122,23 @@ hr.lini {
     margin: 0;
 }
 
+.form-contact{
+    margin-bottom: 30px;
+}
+
+.btn-block{
+    width: 106% !important;
+    position: relative;
+    border: solid 1px #ccc;
+    right: 33px;
+}
+
 input[type], textarea, select {
     -webkit-appearance: none;
     background: #ffffff;
     padding: 0.8125em;
-    border-radius: 50px;
-    border: none;
+    border-radius: 5px;
+    border: solid 1px #ccc;
     left: 9%;
     height: 54px;
 }

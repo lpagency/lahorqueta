@@ -14,6 +14,27 @@ a{
     color: gray;
 }
 
+.banner-titulo-alt {
+    left: 0;
+    bottom: 1.25rem;
+    width: 88%;
+}
+
+.banner-titulo-alt {
+    padding: 1.0833rem 20.0833rem;
+}
+.banner-titulo {
+    color: white;
+    padding: 0;
+    position: absolute;
+    bottom: 1.0833rem;
+    left: 1.0833rem;
+    left: 6.8125rem;
+    bottom: -19.1875rem;
+    text-align: center;
+    font-size: 3.875rem;
+}
+
 a:hover{
     text-decoration: none;
 }

@@ -43,12 +43,7 @@
         {% end %}
         <img id="{{ site.name }}_sup" src="{{ read_image(site.name + '_sup', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_sup',500) }}'" class="banner_su hidden" alt="item">
     </div>
-
-       <div class="container min">
-            <div class="col-md-12">
-               <div class="text-center titulo-about {{editabletext}}" text-id="{{ site.name + '_suu' }}"> {{ read_text(site.name +  '_suu') }}</div>
-           </div>
-       </div>
+    <div class=" banner-titulo banner-titulo-alt {{editabletext}}" text-id="{{ site.name + 'text_main_slide' }}">{{ read_text(site.name +  'text_main_slide') }}</div>
 
 </div>
         <!-- registration -->

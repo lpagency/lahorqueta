@@ -8,6 +8,7 @@
     margin-left: 52px;
     top: 14px;
     position: relative;
+    z-index: 1;
 }
 
 .caja-logo {
@@ -42,6 +43,7 @@
     top: 24px;
     height: 43px;
     border: 2px solid #ccc;
+    z-index: 1;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {

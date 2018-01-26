@@ -35,6 +35,20 @@ a{
     font-size: 3.875rem;
 }
 
+.terminos{
+    width: 1175px !important;
+}
+
+.desc-terminos{
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.titulo-terminos{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
 a:hover{
     text-decoration: none;
 }

@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+.logo-footer{
+    margin-left: 5px !important;
+}
+
 .no-doti{
 	color: white;
 	margin-top: 100px;

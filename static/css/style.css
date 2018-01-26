@@ -66,6 +66,10 @@ div.upload input, div.image-upload input {
     cursor: pointer;
 }
 
+.border-margin{
+    margin-bottom: 110px;
+}
+
 .texto-banner {
     color: white;
     font-size: 76px;

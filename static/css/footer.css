@@ -129,6 +129,8 @@ hr.lini {
 .contact-banner{
     width: 100%;
     object-fit: cover;
+    height: 350px;
+    margin-bottom: 30px;
 }
 
 .btn-block{

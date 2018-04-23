@@ -1,4 +1,5 @@
-#footer{
+#footer
+{
     background-color:#1E1E1E;
     width: 100%;
     bottom: 0;
@@ -7,22 +8,26 @@
     padding: 0;
 }
 
-.logo-footer{
+.logo-footer
+{
     margin-left: 5px !important;
 }
 
-.no-doti{
-	color: white;
-	margin-top: 100px;
+.no-doti
+{
+    color: white;
+    margin-top: 100px;
 }
 
-.no-dot{
-	color: white;
-	margin-top: 114px;
+.no-dot
+{
+    color: white;
+    margin-top: 114px;
 }
 
-.ul-1{
-	font-style: italic;
+.ul-1
+{
+    font-style: italic;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -32,7 +37,8 @@
     position: relative;
 }
 
-.caja-logo-fo {
+.caja-logo-fo
+{
     height: 51px;
     width: 250px;
     float: left;
@@ -43,14 +49,16 @@
 
 }
 
-.ul-2{
+.ul-2
+{
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-top: 30px;
 }
 
-.pas-2 {
+.pas-2
+{
     margin-bottom: 25px;
     position: relative;
     top: 34px;
@@ -61,7 +69,8 @@
     font-weight: 200;
 }
 
-.pas-3 {
+.pas-3
+{
     margin-bottom: 25px;
     position: relative;
     top: 34px;
@@ -72,7 +81,8 @@
     font-weight: 200;
 }
 
-.pas-4{
+.pas-4
+{
     margin-top: 61px;
     width: 85%;
     -webkit-font-smoothing: antialiased;
@@ -81,14 +91,16 @@
 
 }
 
-hr.lini {
+hr.lini
+{
     margin-top: 20px;
     margin-bottom: 60px;
     border: 0;
     border-top: 1px solid rgba(128, 128, 128, 0.26);
 }
 
-.coy {
+.coy
+{
     text-align: left;
     font-size: 11px;
     color: gray;
@@ -97,12 +109,13 @@ hr.lini {
     position: relative;
 }
 
-
-.img-redes{
-  width: 64%;
+.img-redes
+{
+    width: 64%;
 }
 
-.nimi {
+.nimi
+{
     padding: 0px;
     float: right;
 }
@@ -112,28 +125,33 @@ hr.lini {
     float: right;
 }
 
-.form--merge input {
+.form--merge input
+{
     border-radius: 50px 0 0 50px;
 }
 
-.form--merge button[type="submit"] {
+.form--merge button[type="submit"]
+{
     border-radius: 0 50px 50px 0;
     position: relative;
     margin: 0;
 }
 
-.form-contact{
+.form-contact
+{
     margin-bottom: 30px;
 }
 
-.contact-banner{
+.contact-banner
+{
     width: 100%;
     object-fit: cover;
     height: 350px;
     margin-bottom: 30px;
 }
 
-.btn-block{
+.btn-block
+{
     width: 106% !important;
     position: relative;
     border: solid 1px #ccc;
@@ -141,7 +159,8 @@ hr.lini {
     color: #777;
 }
 
-input[type], textarea, select {
+input[type], textarea, select
+{
     -webkit-appearance: none;
     background: #ffffff;
     padding: 0.8125em;
@@ -151,9 +170,9 @@ input[type], textarea, select {
     height: 54px;
 }
 
-button.enviarr {
-    height: 56px;
-    /* font-size: 0.625em !important; */
+button.enviarr
+{
+    height: 54px;
     letter-spacing: 1px;
     color: #fff;
     background: #425cbb;
@@ -161,11 +180,10 @@ button.enviarr {
     bottom: 0px;
     width: 65px;
     left: 3%;
-
 }
 
-
-img.editablelink.footer {
+img.editablelink.footer
+{
     position: absolute;
     left: 0px;
     bottom: 20px;
@@ -175,37 +193,40 @@ img.editablelink.footer {
 
 /*-------------------------------------------RESPONSIVE-----------------------------*/
 
-@media (max-width: 767px){
-    input[type], textarea, select {
-    -webkit-appearance: none;
-    background: #ffffff;
-    padding: 0.8125em;
-    border-radius: 50px;
-    border: none;
-    left: 5%;
-    height: 54px;
-}
+@media (max-width: 767px)
+{
+    input[type], textarea, select
+    {
+        -webkit-appearance: none;
+        background: #ffffff;
+        padding: 0.8125em;
+        border-radius: 50px;
+        border: none;
+        left: 5%;
+        height: 54px;
+    }
 
-.ye {
-    width: 22%;
-    float: left;
-}
+    .ye
+    {
+        width: 22%;
+        float: left;
+    }
 
-.img-redes {
-    width: 20%;
-    margin-bottom: 10px;
-}
+    .img-redes
+    {
+        width: 20%;
+        margin-bottom: 10px;
+    }
 
-.ul-1 {
-    font-style: italic;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    float: left;
-    margin-top: 30px;
-    left: -2%;
-    position: relative;
-}
-
-
+    .ul-1 
+    {
+        font-style: italic;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        float: left;
+        margin-top: 30px;
+        left: -2%;
+        position: relative;
+    }
 }

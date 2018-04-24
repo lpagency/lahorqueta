@@ -270,9 +270,19 @@
     .navbar-left
     {
         float: left!important;
-        margin-left: -44px;
+        margin-left: -19px;
         margin-top: -11px;
-        width: 118%;
+        width: 108%;
+    }
+
+    .so
+    {
+        width: 10%;
+    }
+
+    .so-2
+    {
+        width: 13%;
     }
 }
 
@@ -292,6 +302,12 @@
         border-radius: 4px;
     }
 
+    .header-movil-1
+    {
+        position: relative;
+        margin-top: 20px;
+    }
+
     .navbar-left
     {
         float: left!important;
@@ -303,11 +319,13 @@
     .so
     {
         left: 0px;
+        width: 100%;
     }
 
     .so-2
     {
         left: 0px;
+        width: 100%;
     }
 
     .so-3

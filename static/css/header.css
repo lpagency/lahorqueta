@@ -211,7 +211,6 @@
     transition: all 0.5s ease;
 }
 
-
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus
@@ -227,7 +226,6 @@
     background-color: #eee;
     border-color: transparent;
 }
-
 
 .btn:focus,
 .btn:active:focus,
@@ -265,6 +263,7 @@
         width: 100%;
     }
 }
+
 @media (max-width: 991px)
 {
     .navbar-left

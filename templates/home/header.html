@@ -38,7 +38,7 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
-                    <div class="dropdown col-md-1 col-sm-1 so">
+                    <div class="dropdown col-md-1 col-sm-1 dropdown-movil so">
                         <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary tienda" data-target="#" href="/page.html">
                             <li>
                                 <a href="{{ site_base }}/listado_productos?tag=casa" class="btn-primary tienda">CASA</a>
@@ -52,7 +52,7 @@
                     <li class="header-ja">
                         <a href="{{ site_base }}/listado_productos?tag=jardin">JARDIN</a>
                     </li>
-                    <div class="dropdown col-md-1 col-sm-1 so-2">
+                    <div class="dropdown col-md-1 col-sm-1 dropdown-movil so-2">
                         <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary tienda" data-target="#" href="/page.html">
                             <li>
                                 <a href="{{ site_base }}/listado_productos?tag=terraza" class="btn-primary tienda">TERRAZA</a>
@@ -70,7 +70,7 @@
                     <li class="header-na">
                         <a href="{{ site_base }}/listado_productos?tag=nuevo">NUEVO</a>
                     </li>
-                    <div class="dropdown col-md-2 col-sm-2">
+                    <div class="dropdown col-md-2 col-sm-2 dropdown-movil so-3">
                         <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary tienda" data-target="#" href="/page.html"></a>
                         <li>
                             <a href="{{ site_base }}/listado_productos?tag=regalo" class="btn-primary tienda">PARA REGALO</a>
@@ -81,6 +81,14 @@
                             </li>
                         </ul>
                     </div>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <form id="searchform" class="form-search" role="search" action="{{ site_base }}/listado_productos" method="get">
+                        <li>
+                            <input type="text" name="search_query" class="buscador-header col-md-7 col-sm-2" placeholder="Buscar..." value="">
+                            <input class="img-lupa" type="image" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png" border="0" />
+                        </li>
+                    </form>
                 </ul>
             </div>
         </div>

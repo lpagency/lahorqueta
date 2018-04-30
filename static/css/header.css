@@ -21,6 +21,28 @@
     margin-bottom: 21px;
 }
 
+input.buscador-header
+{
+    height: 40px;
+    width: 75%;
+    position: relative;
+}
+
+input.img-lupa
+{
+    background: none;
+    border: none;
+    position: relative;
+    top: -7px;
+}
+
+li.contenedor-busacador
+{
+    top: -35px;
+    left: 47px;
+    position: relative;
+}
+
 .linea
 {
     background-color: #EFEFEF;
@@ -33,6 +55,7 @@
     background-color: #EFEFEF;
     border-color: transparent;
     border-radius: 0px;
+    min-height: 40px;
 }
 
 .btn-default.carro
@@ -78,7 +101,14 @@
     float: left!important;
     margin-left: -18px;
     margin-top: -11px;
-    width: 82%;
+    width: 80%;
+}
+
+.navbar-right
+{
+    width: 24%;
+    margin-left: -17px;
+    margin-top: -11px;
 }
 
 .dropdown-submenu
@@ -243,7 +273,7 @@
 
 .so-2
 {
-    width: 10%;
+    width: 11%;
 }
 
 .navbar-brand
@@ -257,21 +287,18 @@
 {
     .navbar-left
     {
-        float: left!important;
-        margin-left: -48px;
-        margin-top: -11px;
-        width: 100%;
+        padding-left: 32px;
     }
-}
 
-@media (max-width: 991px)
-{
-    .navbar-left
+    .navbar-right
     {
-        float: left!important;
-        margin-left: -19px;
-        margin-top: -11px;
-        width: 108%;
+        left: -26px;
+        position: relative;
+    }
+
+    .so-2
+    {
+        width: 13%;
     }
 
     .so
@@ -279,9 +306,38 @@
         width: 10%;
     }
 
+    .so-3
+    {
+        width: 17%;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .navbar-left
+    {
+        padding-left: 12px;
+    }
+
     .so-2
     {
-        width: 13%;
+        width: 14%;
+    }
+
+    .dropdown-movil
+    {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .so-3
+    {
+        width: 19%;
+    }
+
+    input.buscador-header
+    {
+        width: 60%;
     }
 }
 
@@ -317,6 +373,7 @@
 
     .so
     {
+        margin-top: 20px;
         left: 0px;
         width: 100%;
     }
@@ -330,6 +387,25 @@
     .so-3
     {
         right: 0px;
+        width: 100%;
+    }
+
+    .dropdown-movil
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-right
+    {
+        left: 20px;
+        width: 100%;
+    }
+
+    input.img-lupa
+    {
+        position: relative;
+        top: 20px;
     }
 
     .header-na

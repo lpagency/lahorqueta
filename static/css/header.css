@@ -283,8 +283,45 @@ li.contenedor-busacador
 }
 
 /*----------------------------------------RESPONSIVE------------------------------*/
+@media (max-width: 1440px)
+{
+    .container.header
+    {
+        width: 1330px;
+    }
+
+    .navbar-right
+    {
+        width: 23%;
+    }
+
+    input.buscador-header
+    {
+        width: 81%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    .container.header
+    {
+        width: 1170px;
+    }
+
+    input.buscador-header
+    {
+        width: 75%;
+    }
+}
+
 @media (max-width: 1199px)
 {
+    .container.header
+    {
+        width: 970px;
+    }
+
     .navbar-left
     {
         padding-left: 32px;
@@ -294,6 +331,12 @@ li.contenedor-busacador
     {
         left: -26px;
         position: relative;
+        width: 24%;
+    }
+
+    input.buscador-header
+    {
+        width: 65%;
     }
 
     .so-2
@@ -316,7 +359,7 @@ li.contenedor-busacador
 {
     .navbar-left
     {
-        padding-left: 12px;
+        padding-left: 37px;
     }
 
     .so-2
@@ -330,6 +373,27 @@ li.contenedor-busacador
         padding-left: 7px;
     }
 
+    .container.header
+    {
+        width: 750px;
+    }
+
+    .btn-primary.tienda
+    {
+        font-size: 10px;
+        bottom: 12px;
+    }
+
+    .nav>li>a
+    {
+        font-size: 10px;
+    }
+
+    .navbar-right
+    {
+        width: 26%;
+    }
+
     .so-3
     {
         width: 19%;
@@ -337,7 +401,7 @@ li.contenedor-busacador
 
     input.buscador-header
     {
-        width: 60%;
+        width: 67%;
     }
 }
 
@@ -357,10 +421,37 @@ li.contenedor-busacador
         border-radius: 4px;
     }
 
+    .container.header
+    {
+        width: 100%;
+    }
+
     .header-movil-1
     {
         position: relative;
         margin-top: 20px;
+    }
+
+    .fa.fa-shopping-cart
+    {
+        font-size: 25px;
+    }
+
+    .dropdown-menu
+    {
+        width: 100%;
+        font-size: 10px;
+        background-color: #efefef;
+        border: none;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .head-arrow
+    {
+        float: right;
+        top: -10px;
+        position: relative;
     }
 
     .navbar-left
@@ -394,6 +485,7 @@ li.contenedor-busacador
     {
         padding-right: 15px;
         padding-left: 15px;
+        z-index: 9999;
     }
 
     .navbar-right
@@ -457,10 +549,16 @@ li.contenedor-busacador
         position: relative;
         right: 24px;
         border-radius: 0px;
-        width: 129px;
+        width: 72px;
         top: 24px;
         height: 43px;
         border: 2px solid #ccc;
+    }
+
+    .units-total
+    {
+        position: relative;
+        top: -3px;
     }
 }
 

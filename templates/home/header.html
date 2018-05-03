@@ -15,7 +15,15 @@
                 </div>
             </div>
         </a>
-        <button type="button" class="btn btn-default carro" id="open-cart" data-toggle="modal" data-target="#myModal">TU COMPRA <span class="units-total">0</span></button>
+        <button type="button" class="btn btn-default carro" id="open-cart" data-toggle="modal" data-target="#myModal">
+            <span class="compra">TU COMPRA</span>
+            <span class="units-total">0</span>
+        </button>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
         <div class="container lini"></div>
     </div>
     <nav class="navbar navbar-default navbar-custom">
@@ -26,14 +34,6 @@
                     Menu
                     <i class="fa fa-bars"></i>
                 </button>
-
-                <div align="center">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        Menu
-                        <i class="fa fa-bars"></i>
-                    </button>
-                </div>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -87,7 +87,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <form id="searchform" class="form-search" role="search" action="{{ site_base }}/listado_productos" method="get">
-                        <li>
+                        <li class="form-search-content">
                             <input type="text" name="search_query" class="buscador-header col-md-7 col-sm-2" placeholder="Buscar..." value="">
                             <input class="img-lupa" type="image" src="https://7static.loadingplay.com/static/images/1da6ee373afe0e65ad1b94c0d7cd9e9d_Vector_search_iconclaro.png" border="0" />
                         </li>

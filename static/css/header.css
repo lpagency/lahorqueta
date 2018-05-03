@@ -407,18 +407,54 @@ li.contenedor-busacador
 
 @media (max-width: 767px)
 {
-    .navbar-toggle
+    .form-search-content
     {
         position: relative;
-        float: inherit;
-        padding: 9px 10px;
-        margin-top: -10px;
-        margin-right: 15px;
-        margin-bottom: 8px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
+        top: -18px;
+    }
+
+    input.buscador-header
+    {
+        border-radius: inherit;
+        width: 82%;
+    }
+
+    .navbar-toggle
+    {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        top: 28px;
+        left: 50px;
+        border: 1px solid #cccccc;
+        z-index: 9999;
+    }
+
+    .navbar-default
+    {
+        min-height: 0px;
+    }
+
+    .linea
+    {
+        height: 111px;
+    }
+
+    .navbar-left
+    {
+        padding-left: 0px;
+    }
+
+    .carro span.compra
+    {
+        display: none;
+    }
+
+    .carro:after
+    {
+        font-family: FontAwesome;
+        content: "\f07a";
+        float: left;
     }
 
     .container.header
@@ -490,7 +526,7 @@ li.contenedor-busacador
 
     .navbar-right
     {
-        left: 20px;
+        left: 10px;
         width: 100%;
     }
 
@@ -543,22 +579,21 @@ li.contenedor-busacador
 {
     .btn-default.carro
     {
-        color: #333;
-        background-color: #EFEFEF;
-        float: right;
-        position: relative;
-        right: 24px;
-        border-radius: 0px;
+        font-size: 18px;
+        right: 115px;
         width: 72px;
-        top: 24px;
-        height: 43px;
-        border: 2px solid #ccc;
+        top: 27px;
+    }
+
+    .logo
+    {
+        margin-left: 16px;
     }
 
     .units-total
     {
         position: relative;
-        top: -3px;
+        top: 0px;
     }
 }
 
@@ -575,6 +610,19 @@ li.contenedor-busacador
     }
 }
 
+@media (max-width: 400px)
+{
+    .navbar-toggle
+    {
+        top: 7px;
+    }
+
+    .logo
+    {
+        width: 155px;
+    }
+}
+
 @media (max-width: 320px)
 {
     .caja-logo
@@ -586,12 +634,31 @@ li.contenedor-busacador
         margin-bottom: 21px;
     }
 
+    .btn-default.carro
+    {
+        font-size: 15px;
+        right: 115px;
+        width: 60px;
+        height: 35px;
+        top: 31px;
+    }
+
+    input.buscador-header
+    {
+        width: 78%;
+    }
+
+    .navbar-toggle
+    {
+        top: 29px;
+    }
+
     .logo
     {
         height: 55px;
         width: 117px;
         float: left;
-        margin-top: 11px;
+        margin-top: 15px;
         margin-bottom: 21px;
         object-fit: scale-down;
     }

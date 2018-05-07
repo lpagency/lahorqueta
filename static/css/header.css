@@ -302,6 +302,24 @@ li.contenedor-busacador
     }
 }
 
+@media (max-width: 1370px)
+{
+    .container.header
+    {
+        width: 1245px;
+    }
+
+    input.buscador-header
+    {
+        width: 77%;
+    }
+
+    .navbar-left
+    {
+        margin-left: -34px;
+    }
+}
+
 @media (max-width: 1300px)
 {
     .container.header

@@ -295,10 +295,31 @@ li.contenedor-busacador
         width: 23%;
     }
 
+    .navbar-left
+    {
+        margin-left: -42px;
+    }
+
     input.buscador-header
     {
         width: 81%;
         left: 5%;
+    }
+
+    .lini
+    {
+        width: 92%;
+    }
+
+    .btn-default.carro
+    {
+        right: 57px;
+        width: 20.1%;
+    }
+
+    .logo
+    {
+        margin-left: 42px;
     }
 }
 
@@ -333,6 +354,14 @@ li.contenedor-busacador
     }
 }
 
+@media (max-width: 1280px)
+{
+    .navbar-left
+    {
+        margin-left: -42px;
+    }
+}
+
 @media (max-width: 1199px)
 {
     .container.header
@@ -342,14 +371,19 @@ li.contenedor-busacador
 
     .navbar-left
     {
-        padding-left: 32px;
+        padding-left: 11px;
     }
 
     .navbar-right
     {
-        left: -26px;
+        left: 18px;
         position: relative;
-        width: 24%;
+        width: 25.8%;
+    }
+
+    .btn-default.carro
+    {
+        right: 41px;
     }
 
     input.buscador-header
@@ -371,13 +405,29 @@ li.contenedor-busacador
     {
         width: 17%;
     }
+
+    .logo
+    {
+        margin-left: 24px;
+    }
 }
 
 @media (max-width: 991px)
 {
     .navbar-left
     {
-        padding-left: 37px;
+        padding-left: 27px;
+    }
+
+    .btn-default.carro
+    {
+        right: 30px;
+        width: 22.5%;
+    }
+
+    .logo
+    {
+        margin-left: 14px;
     }
 
     .so-2
@@ -410,6 +460,7 @@ li.contenedor-busacador
     .navbar-right
     {
         width: 26%;
+        left: -8px;
     }
 
     .so-3
@@ -613,6 +664,11 @@ li.contenedor-busacador
         position: relative;
         top: 0px;
     }
+
+    .navbar-toggle
+    {
+        top: 7px;
+    }
 }
 
 @media (max-width:414px)
@@ -625,6 +681,11 @@ li.contenedor-busacador
         margin-top: -7px;
         margin-bottom: 21px;
         left: -10px;
+    }
+
+    .navbar-toggle
+    {
+        top: 28px;
     }
 }
 

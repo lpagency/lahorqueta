@@ -10,8 +10,8 @@
 
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
-<link rel="stylesheet" type="text/css" href="{{ site_base }}/static/Swiper-3.4.2/dist/css/swiper.min.css">   
-<link rel="stylesheet" href="{{ site_base }}/static/css/ocul.css">
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/{{ nocache_static }}/Swiper-3.4.2/dist/css/swiper.min.css">
+<link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/css/ocul.css">
 <style type="text/css">
 
 
@@ -19,19 +19,19 @@
 {% end %}
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/product_detail.js"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/swiper.js"></script>
-<script type="text/javascript" src="{{ site_base }}/static/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/product_detail.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/swiper.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/Swiper-3.4.2/dist/js/swiper.min.js"></script>
     <script type="text/javascript">
-        $('ul.nav div.dropdown').hover(function() 
+        $('ul.nav div.dropdown').hover(function()
         {
             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-        }, function() 
+        }, function()
         {
             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
         });
     </script>
-    
+
 
 <script type="text/javascript">
 
@@ -93,7 +93,7 @@
                          // $('.ellipsis').ellipsis();
                          $(".ellipsis").dotdotdot();
                      }
-                
+
             };
             $('.product-related').ecommerce('product_box', config);
         };
@@ -118,7 +118,7 @@
 
 
 <script type="text/template" id="product_detail">
- 
+
     <div class="container min">
         <div class="container border-margin">
            <section class="fer">
@@ -131,7 +131,7 @@
                     <div class="item active">
                     <img class="{{! images[0]['thumb_500']|hide_if_empty}} little-2" src="{{! images[0]['thumb_500'] }}" onload="this.onload='';this.src={{! images[0]['thumb_500']}}" alt="Chania"  width="460" height="345">
                     </div>
-                    
+
                     <div class="item">
                     <img class="{{! images[2]['thumb_500']|hide_if_empty }} little-2" src="{{! images[2]['thumb_500'] }}"  alt="Chania" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" width="460" height="345">
                     </div>
@@ -171,20 +171,20 @@
                             <div class="item__addtocart">
                               <input type="text" value="1" name="quantity" class="prod">
 
-                              <button 
-                              type="button" 
-                              class="btn add-to-cart 
-                              btn-success comprar" 
-                              id="open-cart" 
-                              data-toggle="modal" 
-                              data-target="#myModal" 
-                              product-upp="{{! upp }}" 
-                              product-name="{{! name }}" 
-                              product-price="{{! main_price }}" 
-                              product-sku="{{! sku }}" 
+                              <button
+                              type="button"
+                              class="btn add-to-cart
+                              btn-success comprar"
+                              id="open-cart"
+                              data-toggle="modal"
+                              data-target="#myModal"
+                              product-upp="{{! upp }}"
+                              product-name="{{! name }}"
+                              product-price="{{! main_price }}"
+                              product-sku="{{! sku }}"
                               product-weight="{{! weight }}"
-                              product-id="{{! id }}" 
-                              product-img="{{! images[0]['thumb_500'] }}" 
+                              product-id="{{! id }}"
+                              product-img="{{! images[0]['thumb_500'] }}"
                               lp-cart-add>Comprar</button>
 
                             </div>
@@ -214,7 +214,7 @@
                              </a>
                             </div>
                         </div>
-                            
+
 
                      </div>
             </section>
@@ -258,7 +258,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <h1 class="text-relac text-center"><strong class="editabletext"></strong></h1>
         </div>
-    
+
     <div class="product-related">
 
     </div>

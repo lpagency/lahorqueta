@@ -38,7 +38,7 @@
         'https://pay.loadingplay.com');
     var app_public = $.environmentVar(64,64,64);
     var site_name = $.environmentVar('lahorqueta2', 'lahorqueta2', 'lahorqueta2');
-  
+
 
         var config = {
             'app_public' : app_public,
@@ -103,7 +103,7 @@
         {% end %}
         <img id="{{ site.name }}_home" src="{{ read_image(site.name + '_home', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home',500) }}'" class="img-principal hidden" alt="item">
     </div>
-        
+
         <div class="col-md-12 col-sm-12 col-xs-12">
            <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_tex' }}"> {{ read_text(site.name +  '_tex') }}</div>
            <div class="texto-peque {{editabletext}}" text-id="{{ site.name + '_tex_2' }}"> {{ read_text(site.name +  '_tex_2') }}</div>
@@ -114,16 +114,16 @@
             <div style="position:relative;">
               <div class="boton-pro">
                 <a id="{{ site.name + '_' }}" href="{{ read_link(site.name + '_butt') }}">
-                 <div class="texto-play {{editabletext}}" text-id="{{ site.name + '_pay' }}"> {{ read_text(site.name +  '_pay') }}</div> 
-                 </a>             
+                 <div class="texto-play {{editabletext}}" text-id="{{ site.name + '_pay' }}"> {{ read_text(site.name +  '_pay') }}</div>
+                 </a>
                    {% if is_admin %}
-                   <img class="change-image editablelink marc" link-id="{{ site.name + '_butt' }}" content="{{ read_link(site.name + '_butt') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                   <img class="change-image editablelink marc" link-id="{{ site.name + '_butt' }}" content="{{ read_link(site.name + '_butt') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                    {% end %}
                </div>
            </div>
          </div>
        </div>
-       
+
     </div>
 </section>
 
@@ -152,8 +152,8 @@
         {{ getArticleList(limit=1, html="page/article_home.html", tag='home,posicion 4') }}
         <!--  </div> -->
     </div>
-        
-  
+
+
 </section>
 
 
@@ -173,7 +173,7 @@
             <div align="center">
              <div class="gre">
                <div class="col-md-12 col-sm-12 col-xs-12">
-                <a class="subcateg" tag="casa">Casa </a> 
+                <a class="subcateg" tag="casa">Casa </a>
                 /
                 <a class="subcateg" tag="terraza">Terraza</a>
                 /
@@ -193,7 +193,7 @@
 <div class="container min">
 <section class="masonry-contained">
     <div class="row">
-           <div align="center"> 
+           <div align="center">
               <div class="product-list">
                   <div class="spinner">
                     <div class="rect1"></div>
@@ -210,7 +210,7 @@
               </div>
             </div>
             </div>
-          </div> 
+          </div>
 
     </div>
 </section>

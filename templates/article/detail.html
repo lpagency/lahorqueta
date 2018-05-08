@@ -5,9 +5,9 @@
 {% block css %}
 <link href="https://fonts.googleapis.com/css?family=Lato" type="text/css"/>
 {% if is_admin %}
-<link rel="stylesheet" href="{{ site_base }}/static/css/textbox_io.css" type="text/css">
-<link rel="stylesheet" href="{{ site_base }}/static/css/detalle_articulos.css?22">
-<script type="text/javascript" src="{{ site_base }}/static/js/article/detail.js"></script>
+<link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/css/textbox_io.css" type="text/css">
+<link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/css/detalle_articulos.css?22">
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/article/detail.js"></script>
 {% end %}
 <style type="text/css">
     html, body{
@@ -18,7 +18,7 @@
         .ol{
           visibility: hidden;
         }
-      
+
         .franja-color{
             background: transparent;
         }
@@ -33,16 +33,16 @@
 {% end %}
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/dermatologia.js"></script>
 {% end %}
 
 {% block body %}
 
         <!-- registration -->
-        
+
 <div class="">
       <div class="mobile-det" style="background:url('{{ article['thumb_500'] }}'); height:400px; background-size:cover; margin-top: -20px;">
-       
+
         <img class="fondo-articulo hidden" src="{{ article["thumb_500"] }}" class="img-responsive lazy" data-original="{{ article["url"] }}" alt="item">
        </div>
 </div>
@@ -63,10 +63,10 @@
                         <div class="content articulo-text" style="">
                             <div class="col-sm-12 especial">
                                 <h2 class="h2-art til-ban-2">{{ article["caption"] }}
-                             
+
                                 </h2>
                             </div>
-                            
+
                            <!--  <div class="col-sm-12 especial"> -->
                            <div align="center">
                                <div class="col-sm-12">
@@ -81,7 +81,7 @@
                 </div>
         </div>
 
- 
+
 
 {% include '../home/footer.html' %}
 {% end %}

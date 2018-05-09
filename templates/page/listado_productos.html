@@ -26,9 +26,14 @@
         {
             var link = window.location.href;
 
-            if(link.indexOf("search_query") >= -1)
+            if(link.indexOf("search_query") > -1)
             {
                 $(".mobile").addClass("hidden");
+                console.log("aaa");
+            }
+            else
+            {
+                $(".mobile").removeClass("hidden");
             }
         });
     </script>

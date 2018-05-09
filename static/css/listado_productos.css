@@ -1,4 +1,5 @@
-.original-de {
+.original-de
+{
     position: relative;
     left: 3%;
     margin-top: 14px;
@@ -9,7 +10,19 @@
     font-size: 17px;
 }
 
-.shop-item-1 {
+.search-banner
+{
+    height: 440px;
+    background-size: cover;
+    margin-top: -20px;
+    background-position: center;
+    margin-bottom: 30px;
+    width: 89%;
+    margin-left: 5.5%;
+}
+
+.shop-item-1
+{
     overflow: hidden;
     background: #EFEFEF;
     padding: 1.625em;
@@ -18,17 +31,20 @@
     height: 430px;
 }
 
-.masonry__filters {
+.masonry__filters
+{
     padding: 1.625em 0;
 }
 
-.product-home {
+.product-home
+{
     width: 100%;
     height: 308px;
     object-fit: contain;
 }
 
-.shop-item-1 .shop-item__title h5 {
+.shop-item-1 .shop-item__title h5
+{
     margin-bottom: 10px;
     position: absolute;
     top: 380px;
@@ -36,18 +52,21 @@
     font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
 }
 
-.shop-item-1:hover .shop-item__price.hover--reveal {
+.shop-item-1:hover .shop-item__price.hover--reveal
+{
     opacity: 1;
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
 }
 
-.type--strikethrough {
+.type--strikethrough
+{
     text-decoration: line-through;
     opacity: .5;
 }
 
-.shop-item-1 .shop-item__price.hover--reveal {
+.shop-item-1 .shop-item__price.hover--reveal
+{
     transition: 0.3s ease-in;
     -webkit-transition: 0.3s ease-in;
     -moz-transition: 0.3s ease-in;
@@ -59,17 +78,19 @@
     padding-bottom: 15px;
 }
 
-.shop-item-1 .shop-item__price span.type--strikethrough {
+.shop-item-1 .shop-item__price span.type--strikethrough
+{
     display: inline-block;
     margin-right: 1.625em;
 }
 
-.masonry-shop{
+.masonry-shop
+{
     margin-bottom: 30px;
 }
 
-
-.pro-ofer{
+.pro-ofer
+{
     position: relative;
     top: 96px;
     font-size: 31px;
@@ -78,7 +99,8 @@
     font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
 }
 
-.informa{
+.informa
+{
     position: relative;
     top: 108px;
     font-size: 16px;
@@ -88,7 +110,8 @@
     color: white;
 }
 
-.precio-lis{
+.precio-lis
+{
     position: relative;
     top: 129px;
     font-size: 24px;
@@ -98,29 +121,33 @@
     color: gray;
 }
 
-.sun{
+.sun
+{
     margin-top: -20px;
 }
 
-.carousel-control.right {
-    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
-    background-image: linear-gradient(to right,rgba(0,0,0,.0000) 0,rgba(0,0,0,.0) 100%);
+.carousel-control.right
+{
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0000) 0, rgba(0, 0, 0, .0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat-x;
 }
 
-.carousel-control.left {
-    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
-    background-image: linear-gradient(to right,rgba(0,0,0,.0000) 0,rgba(0,0,0,.0) 100%);
+.carousel-control.left
+{
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0000) 0, rgba(0, 0, 0, .0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat-x;
 }
 
-.fa-angle-right {
+.fa-angle-right
+{
     position: relative;
     top: 119px;
     display: inline-block;
@@ -131,10 +158,10 @@
     -moz-osx-font-smoothing: grayscale;
     font-size: 57px !important;
     right: 26px;
-
 }
 
-.fa-angle-left {
+.fa-angle-left
+{
     position: relative;
     top: 119px;
     display: inline-block;
@@ -147,13 +174,13 @@
     right: 55px;
 }
 
-
-
-.fer{
+.fer
+{
     margin-top: 110px;
 }
 
-.name-detail {
+.name-detail
+{
     font-size: 24px;
     text-align: left;
     position: relative;
@@ -162,7 +189,8 @@
     margin-top: -2px;
 }
 
-.btn-success.car {
+.btn-success.car
+{
     color: #fff;
     background-color: #305CBF;
     border-color: #305CBF;
@@ -175,7 +203,8 @@
     margin-top: 130px;
 }
 
-.pin {
+.pin
+{
     float: left !important;
     background: gray !important;
     font-size: 15px !important;
@@ -187,22 +216,24 @@
     cursor: pointer;
 }
 
-.item__addtocart button {
+.item__addtocart button
+{
     border-radius: 0 0 4px 4px;
     min-width: 100%;
     background: #425cbb;
     color: white;
-    height: 54px;  
+    height: 54px;
     right: 4px;
     position: relative;
-
 }
 
-.btn.btn--primary {
+.btn.btn--primary
+{
     border-color: #425cbb;
 }
 
-.item__addtocart input.prod[type="text"] {
+.item__addtocart input.prod[type="text"]
+{
     border-radius: 4px 4px 0 0;
     min-width: 100%;
     text-align: center;
@@ -211,7 +242,8 @@
     position: relative;
 }
 
-.item__addtocart {
+.item__addtocart
+{
     max-width: 60%;
     position: relative;
     float: left;
@@ -219,12 +251,14 @@
     margin-top: 60px;
 }
 
-.prin{
+.prin
+{
     margin-top: 27px;
     right: 23px;
 }
 
-.texto-de {
+.texto-de
+{
     text-align: left;
     float: left;
     width: 100%;
@@ -234,7 +268,8 @@
     margin-bottom: 10px;
 }
 
-.texto-de-in {
+.texto-de-in
+{
     text-align: left;
     float: left;
     width: 100%;
@@ -244,7 +279,8 @@
     margin-bottom: 0px;
 }
 
-.descr_prod_detail {
+.descr_prod_detail
+{
     width: 100%;
     position: relative;
     left: 5%;
@@ -255,7 +291,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.texto-bu{
+.texto-bu
+{
     text-align: left;
     float: left;
     width: 100%;
@@ -265,59 +302,60 @@
     margin-bottom: 20px;
 }
 
-
-.redes-detalle {
+.redes-detalle
+{
     width: 30px;
     float: left;
     padding-left: 6px;
 }
 
-
-
-
 /*-------------------------------------------Responsive------------------------------*/
-@media (max-width: 767px){
-    .original-de {
-    position: relative;
-    left: 16px;
-    margin-top: 22px;
-    margin-bottom: -29px;
-    float: left;
-    text-align: left;
-}
+@media (max-width: 767px)
+{
+    .original-de
+    {
+        position: relative;
+        left: 16px;
+        margin-top: 22px;
+        margin-bottom: -29px;
+        float: left;
+        text-align: left;
+    }
 
-.little-2 {
-    width: 100%;
-    height: 400px !important;
-    object-fit: contain;
-}
+    .little-2
+    {
+        width: 100%;
+        height: 400px !important;
+        object-fit: contain;
+    }
 
-.name-detail {
-    font-size: 24px;
-    text-align: left;
-    position: relative;
-    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
-    left: 3%;
-    margin-top: 32px;
-}
+    .name-detail
+    {
+        font-size: 24px;
+        text-align: left;
+        position: relative;
+        font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+        left: 3%;
+        margin-top: 32px;
+    }
 
-.carousel {
-    position: relative;
-    margin-top: -74px;
-}
+    .carousel
+    {
+        position: relative;
+        margin-top: -74px;
+    }
 
-.fa-angle-left {
-    position: relative;
-    top: 119px;
-    display: inline-block;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 57px !important;
-    right: 0px;
-}
-
-
+    .fa-angle-left
+    {
+        position: relative;
+        top: 119px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 57px !important;
+        right: 0px;
+    }
 }

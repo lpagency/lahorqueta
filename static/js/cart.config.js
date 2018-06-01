@@ -79,6 +79,7 @@ $(document).ready(function()
             'maxProducts' : 100,
             'templateOrigin' : '#product_template',
             'tag' : tag,
+            'search': false,
             'ignore_stock' : true,
             'infinite_scroll': false,
             'onLoad':function(){

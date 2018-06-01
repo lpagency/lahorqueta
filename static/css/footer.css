@@ -1,6 +1,6 @@
 #footer
 {
-    background-color:#1E1E1E;
+    background-color: #1E1E1E;
     width: 100%;
     bottom: 0;
     position: relative;
@@ -8,45 +8,56 @@
     padding: 0;
 }
 
+.margin-top-footer
+{
+    color: white;
+    margin-top: 80px;
+}
+
+.margin-top-footer-logo
+{
+    color: white;
+    margin-top: 80px;
+}
+
+.txt-footer-logo a
+{
+    color: white;
+}
+
 .logo-footer
 {
-    margin-left: 5px !important;
+    height: 55px;
+    width: 200px;
+    float: left;
+    object-fit: scale-down;
+    margin-left: 5px;
+    position: relative;
+    z-index: 1;
 }
 
-.no-doti
+.txt-footer-logo a:hover
 {
     color: white;
-    margin-top: 100px;
 }
 
-.no-dot
-{
-    color: white;
-    margin-top: 114px;
-}
-
-.ul-1
+.txt-footer-logo
 {
     font-style: italic;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     float: left;
-    margin-top: 30px;
     left: 9%;
     position: relative;
 }
 
-.caja-logo-fo
+.caja-logo-footer
 {
-    height: 51px;
     width: 250px;
     float: left;
-    margin-top: -7px;
-    margin-bottom: 21px;
     position: relative;
     left: 0px;
-
 }
 
 .ul-2
@@ -57,38 +68,23 @@
     margin-top: 30px;
 }
 
-.pas-2
+.footer-div-content
 {
     margin-bottom: 25px;
     position: relative;
-    top: 34px;
-    font-size: 10px;
+    font-size: 12px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
     font-weight: 200;
 }
 
-.pas-3
+.footer-div-newsletter
 {
-    margin-bottom: 25px;
-    position: relative;
-    top: 34px;
-    font-size: 10px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 200;
-}
-
-.pas-4
-{
-    margin-top: 61px;
     width: 85%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 15px;
-
 }
 
 hr.lini
@@ -120,8 +116,9 @@ hr.lini
     float: right;
 }
 
-.ye{
-	width: 22%;
+.footer-icon
+{
+    width: 22%;
     float: right;
 }
 
@@ -159,7 +156,9 @@ hr.lini
     color: #777;
 }
 
-input[type], textarea, select
+input[type],
+textarea,
+select
 {
     -webkit-appearance: none;
     background: #ffffff;
@@ -190,23 +189,59 @@ img.editablelink.footer
     z-index: 100000;
 }
 
+@media (max-width: 768px)
+{
+    .margin-top-footer-logo
+    {
+        padding-left: 0px;
+    }
 
-/*-------------------------------------------RESPONSIVE-----------------------------*/
+    input[type],
+    textarea,
+    select
+    {
+        left: 0%;
+    }
+
+    .margin-top-footer
+    {
+        padding-left: 0px;
+    }
+
+    .caja-logo-footer
+    {
+        width: 100%;
+    }
+
+    .logo-footer
+    {
+        width: 100%;
+        object-fit: scale-down;
+    }
+
+    .txt-footer-logo
+    {
+        left: 5%;
+    }
+}
 
 @media (max-width: 767px)
 {
-    input[type], textarea, select
+    input[type],
+    textarea,
+    select
     {
         -webkit-appearance: none;
         background: #ffffff;
         padding: 0.8125em;
         border-radius: 50px;
         border: none;
-        left: 5%;
+        left: 9%;
         height: 54px;
+        width: 70%;
     }
 
-    .ye
+    .footer-icon
     {
         width: 22%;
         float: left;
@@ -218,7 +253,23 @@ img.editablelink.footer
         margin-bottom: 10px;
     }
 
-    .ul-1 
+    .margin-top-footer
+    {
+        margin-top: 0px;
+    }
+
+    .footer-div-newsletter
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-comertial
+    {
+        text-align: center;
+    }
+
+    .txt-footer-logo
     {
         font-style: italic;
         font-size: 16px;
@@ -226,7 +277,9 @@ img.editablelink.footer
         -moz-osx-font-smoothing: grayscale;
         float: left;
         margin-top: 30px;
-        left: -2%;
+        left: 0%;
+        width: 100%;
+        text-align: center;
         position: relative;
     }
 }

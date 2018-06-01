@@ -274,3 +274,16 @@ img.editablelink.footer
         position: relative;
     }
 }
+
+@media (max-width: 414px)
+{
+    .img-redes
+    {
+        width: 60%;
+    }
+
+    .footer-icon
+    {
+        width: 100%;
+    }
+}

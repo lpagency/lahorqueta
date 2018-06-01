@@ -1,4 +1,5 @@
-.add-one.che {
+.add-one.che
+{
     float: inherit;
     background-color: #BA6C54;
     color: white;
@@ -8,20 +9,23 @@
     left: 5px;
 }
 
-.volver-vitri{
+.volver-vitri
+{
     font-size: 9px;
     font-weight: 600;
     color: gray;
 }
 
-.div-1{
-	margin-top: 17px;
+.div-1
+{
+    margin-top: 17px;
     font-size: 11px;
     font-weight: 600;
     color: gray;
 }
 
-.remove-one.che {
+.remove-one.che
+{
     background-color: #BA6C54;
     color: white;
     font-size: 9px;
@@ -30,23 +34,25 @@
     left: -3px;
 }
 
-
-.vitrin{
-	font-size: 10px;
+.vitrin
+{
+    font-size: 10px;
     font-weight: 400;
     color: rgba(204, 108, 78, 1) !important;
 }
 
-.div-2{
-	margin-top: 17px;
+.div-2
+{
+    margin-top: 17px;
     font-size: 11px;
     font-weight: 600;
     color: rgba(204, 108, 78, 1) !important;
 }
 
-.cartMiniTable {
+.cartMiniTable
+{
     border: 0px solid #DDDDDD;
-    padding:32px;
+    padding: 32px;
     width: 100%;
     position: relative;
     left: 0%;
@@ -54,19 +60,26 @@
     padding-bottom: 15px;
 }
 
-.cartMiniTable {
-    background:#D8D8D8;
+.cartMiniTable
+{
+    background: #D8D8D8;
 }
 
-.contentBox{
+.contentBox
+{
     position: fixed;
     bottom: 0px;
     z-index: -1;
     margin-bottom: 30px;
-
 }
 
-.btn-primary.pagar {
+.no-padding
+{
+    padding-left: 0px;
+}
+
+.btn-primary.pagar
+{
     background-color: #555252;
     font-size: 12px;
     color: white;
@@ -74,7 +87,6 @@
     font-weight: 300;
     letter-spacing: 1px;
     border-radius: 0px;
-    /* padding: 2px 8px 5px 14px; */
     width: 90%;
     margin: auto;
     height: 35px;
@@ -85,7 +97,13 @@
     z-index: 100;
 }
 
-.table.std>thead>tr>th, .table.std>tbody>tr>th, .table.std>tfoot>tr>th, .table.std>thead>tr>td, .table.std>tbody>tr>td, .table.std>tfoot>tr>td {
+.table.std>thead>tr>th,
+.table.std>tbody>tr>th,
+.table.std>tfoot>tr>th,
+.table.std>thead>tr>td,
+.table.std>tbody>tr>td,
+.table.std>tfoot>tr>td
+{
     padding: 6px;
     line-height: 1.42857143;
     vertical-align: top;
@@ -95,11 +113,13 @@
     font-weight: 700;
 }
 
-.site-color{
-  color: #DE7E2A;
+.site-color
+{
+    color: #DE7E2A;
 }
 
-tbody.tabla-final{
+tbody.tabla-final
+{
     border-bottom: 1px solid rgba(204, 108, 78, 1);
     color: gray;
     font-weight: 100;
@@ -107,7 +127,8 @@ tbody.tabla-final{
     -moz-osx-font-smoothing: grayscale;
 }
 
-tbody.tabla-actual{
+tbody.tabla-actual
+{
     border-bottom: 1px solid gray;
     color: gray;
     font-weight: 400;
@@ -116,17 +137,20 @@ tbody.tabla-actual{
     font-size: 12px;
 }
 
-.t-resumen{
+.t-resumen
+{
     font-weight: 700;
     letter-spacing: 1px;
     color: #574E51;
 }
 
-.step-margin-top{
+.step-margin-top
+{
     margin-top: 30px;
 }
 
-hr.h-2 {
+hr.h-2
+{
     margin-top: 50px;
     margin-bottom: 20px;
     border: 0;
@@ -136,7 +160,8 @@ hr.h-2 {
     right: 20px;
 }
 
-.info-despacho{
+.info-despacho
+{
     text-align: left;
     position: relative;
     right: 19px;
@@ -145,7 +170,8 @@ hr.h-2 {
     font-size: 13px;
 }
 
-.form-control.checkout {
+.form-control.checkout
+{
     display: block;
     width: 75%;
     height: 24px;
@@ -157,11 +183,11 @@ hr.h-2 {
     background-image: none;
     border: 1px solid rgba(0, 0, 0, 0.43);
     border-radius: 0px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     margin-bottom: 0px;
     -ms-transform: scaleY(1.2);
     -moz-transform: scaleY(1.2);
@@ -170,7 +196,8 @@ hr.h-2 {
     letter-spacing: 1px;
 }
 
-.form-control.comu {
+.form-control.comu
+{
     display: block;
     width: 75%;
     height: 24px;
@@ -180,11 +207,11 @@ hr.h-2 {
     background-image: none;
     border: 1px solid rgba(0, 0, 0, 0.43);
     border-radius: 0px !important;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     font-size: 9px;
     color: gray;
     margin-bottom: 0px;
@@ -195,7 +222,8 @@ hr.h-2 {
     letter-spacing: 1px;
 }
 
-.form-control.infor {
+.form-control.infor
+{
     display: block;
     width: 75%;
     height: 70px;
@@ -205,11 +233,11 @@ hr.h-2 {
     background-image: none;
     border: 1px solid rgba(0, 0, 0, 0.43);
     border-radius: 0px !important;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     font-size: 9px;
     color: gray;
     margin-bottom: 0px;
@@ -221,7 +249,8 @@ hr.h-2 {
     padding-bottom: 39px;
 }
 
-.texto-a {
+.texto-a
+{
     text-align: left;
     position: relative;
     right: 35px;
@@ -231,11 +260,13 @@ hr.h-2 {
     margin-top: -27px;
 }
 
-select {
+select
+{
     -webkit-appearance: none;
 }
 
-.fa-caret-down.chek {
+.fa-caret-down.chek
+{
     position: relative;
     float: right;
     margin-bottom: -15px;
@@ -245,12 +276,14 @@ select {
     left: -87px;
 }
 
-.form-group {
+.form-group
+{
     margin-bottom: 19px;
-    margin-left: -35px;
+    margin-left: 0px;
 }
 
-hr.h-3 {
+hr.h-3
+{
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
@@ -260,15 +293,17 @@ hr.h-3 {
     right: 37px;
 }
 
-.info-cupon{
+.info-cupon
+{
     color: #DE7E2A;
     text-align: left;
     position: relative;
     right: 18px;
     font-size: 13px;
-
 }
-.form-control.input-sm {
+
+.form-control.input-sm
+{
     height: 25px;
     padding: 5px 10px;
     font-size: 12px;
@@ -281,7 +316,8 @@ hr.h-3 {
     position: relative;
 }
 
-.form-control.input-sm.navi {
+.form-control.input-sm.navi
+{
     height: 25px;
     padding: 5px 10px;
     font-size: 12px;
@@ -294,7 +330,8 @@ hr.h-3 {
     position: relative;
 }
 
-.btn-default.guardar {
+.btn-default.guardar
+{
     color: white;
     background-color: #DE7E2A;
     border-color: transparent;
@@ -309,7 +346,8 @@ hr.h-3 {
     position: relative;
 }
 
-.btn-default.promo {
+.btn-default.promo
+{
     color: white;
     background-color: gray;
     border-color: transparent;
@@ -324,7 +362,8 @@ hr.h-3 {
     padding-top: 5px;
 }
 
-.info-pago{
+.info-pago
+{
     text-align: left;
     position: relative;
     right: 19px;
@@ -333,19 +372,22 @@ hr.h-3 {
     font-size: 13px;
 }
 
-a.ter-chek-2 {
+a.ter-chek-2
+{
     color: gray;
     font-size: 13px;
     font-weight: 200;
 }
 
-a.ter-chek {
+a.ter-chek
+{
     color: gray;
     font-size: 13px;
     font-weight: 200;
 }
 
-.suger {
+.suger
+{
     color: #DE7E2A;
     font-weight: 400;
     font-size: 11px;
@@ -355,7 +397,8 @@ a.ter-chek {
     left: 7%;
 }
 
-.texto-datos {
+.texto-datos
+{
     text-align: left;
     color: #DE7E2A;
     margin-top: 19px;
@@ -364,7 +407,8 @@ a.ter-chek {
     left: 7%;
 }
 
-.despe{
+.despe
+{
     color: #DE7E2A;
     text-align: left;
     position: relative;
@@ -373,7 +417,8 @@ a.ter-chek {
     font-style: italic;
 }
 
-.btn-default.pagar-che {
+.btn-default.pagar-che
+{
     color: white;
     background-color: #555252;
     border-color: transparent;
@@ -388,11 +433,14 @@ a.ter-chek {
     padding-top: 5px;
 }
 
-label.payment-label {
+label.payment-label
+{
     text-align: left;
     margin-top: 10px;
 }
-.control-label.tra {
+
+.control-label.tra
+{
     float: left;
     font-weight: 500;
     position: relative !important;
@@ -400,11 +448,11 @@ label.payment-label {
     z-index: 1030 !important;
     font-size: 12px !important;
     left: 54px !important;
-    /* margin-top: -10px; */
     color: white !important;
 }
 
-.imgup>ul>li {
+.imgup>ul>li
+{
     display: block;
     border: rgba(128, 128, 128, 0.46) solid 1px !important;
     float: left !important;
@@ -418,7 +466,8 @@ label.payment-label {
     margin-top: -24px !important;
 }
 
-.btn-default.com {
+.btn-default.com
+{
     color: white;
     background-color: green;
     border-color: transparent;
@@ -433,7 +482,8 @@ label.payment-label {
     padding-top: 7px;
 }
 
-.t-1{
+.t-1
+{
     color: #DE7E2A;
     font-weight: 400;
     font-size: 12px;
@@ -444,7 +494,8 @@ label.payment-label {
     font-style: italic;
 }
 
-.t-22{
+.t-22
+{
     color: #DE7E2A;
     font-weight: 400;
     font-size: 14px;
@@ -457,11 +508,13 @@ label.payment-label {
     margin-bottom: -10px;
 }
 
-.pon{
+.pon
+{
     margin-left: -37px;
 }
 
-.texto-trans{
+.texto-trans
+{
     font-size: 10px;
     position: relative;
     top: 5px;
@@ -470,7 +523,8 @@ label.payment-label {
     left: 7%;
 }
 
-.despacho-tick {
+.despacho-tick
+{
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-inline-box;
@@ -488,14 +542,17 @@ label.payment-label {
     position: relative;
 }
 
-label.del {
+label.del
+{
     display: inline-block;
     max-width: 100%;
     margin-bottom: 4px;
     font-weight: 500;
 }
 
-input.chi[type=radio], input.chi[type=checkbox] {
+input.chi[type=radio],
+input.chi[type=checkbox]
+{
     margin: 4px 0px -4px;
     margin-top: 1px \9;
     line-height: normal;
@@ -504,7 +561,8 @@ input.chi[type=radio], input.chi[type=checkbox] {
     z-index: 100000;
 }
 
-.fa-check-square.checkout {
+.fa-check-square.checkout
+{
     right: 0px;
     position: relative;
     top: 9px;
@@ -515,7 +573,8 @@ input.chi[type=radio], input.chi[type=checkbox] {
     margin-top: -24px;
 }
 
-.fa-check-square.pago {
+.fa-check-square.pago
+{
     right: -4px;
     position: relative;
     top: 3px;
@@ -526,7 +585,8 @@ input.chi[type=radio], input.chi[type=checkbox] {
     margin-top: -24px;
 }
 
-.nombre-chek {
+.nombre-chek
+{
     width: 25%;
     height: 41px;
     top: 10px;
@@ -537,7 +597,8 @@ input.chi[type=radio], input.chi[type=checkbox] {
     padding-right: 10px;
 }
 
-.img-cart{
+.img-cart
+{
     width: 68%;
     object-fit: cover;
     height: 94px;
@@ -545,30 +606,69 @@ input.chi[type=radio], input.chi[type=checkbox] {
     top: 19px;
 }
 
-.td-img{
+.td-img
+{
     width: 19%;
 }
 
-.sub-cheki{
-  color: #DE7E2A;
+.sub-cheki
+{
+    color: #DE7E2A;
 }
 
-.eliminar-cheki{
+.eliminar-cheki
+{
     text-align: center;
     width: 9%;
 }
 
-.corri{
+.corri
+{
     position: relative;
     right: 32px;
 }
 
-.logo_webpay-dos{
+.logo_webpay-dos
+{
     position: relative;
     left: 7%;
 }
 
-.cant{
+.cant
+{
     left: 1%;
     position: relative;
+}
+
+.btn-block
+{
+    position: relative;
+    border: solid 1px #ccc;
+    color: #777;
+}
+
+@media (max-width: 768px)
+{
+    .form-group
+    {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .no-padding
+    {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .controls input,
+    .controls textarea .input-lg
+    {
+        border-radius: 0px;
+        left: 0px;
+        width: 100%;
+        border: solid 1px #ccc;
+    }
 }

@@ -1,9 +1,9 @@
 <div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mar">
-    <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="col-md-3 col-sm-3 col-xs-12">
         <div class="text-left fot">
             <div class="clearfix"></div>
-            <ul class="no-doti">
-                <div class="caja-logo-fo">
+            <ul class="margin-top-footer-logo">
+                <div class="caja-logo-footer">
                     {% if is_admin %}
                         <div class="image-upload lapiz visible-movil">
                             <label for="img_footer_logo">
@@ -12,41 +12,49 @@
                             <input type="file" class="editableimage" image-id="{{ site.name }}_footer_logo" name="image" id="img_footer_logo" >
                         </div>
                     {% end %}
-                    <img id="{{ site.name }}_footer_logo" src="{{ read_image(site.name + '_footer_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_logo',) }}'" class="img-responsive logo logo-footer" alt="item">
+                    <img id="{{ site.name }}_footer_logo" src="{{ read_image(site.name + '_footer_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_logo',) }}'" class="img-responsive logo-footer" alt="item">
                 </div>
-                <div class="ul-1 {{editabletext}}" text-id="{{ site.name + '_footer_0' }}"> {{ read_text(site.name +  '_footer_0') }}</div>
+                <div class="txt-footer-logo {{editabletext}}" text-id="{{ site.name + '_footer_0' }}"> {{ read_text(site.name +  '_footer_0') }}</div>
             </ul>
         </div>
     </div>
     <div class="col-md-2 col-sm-2 col-xs-12">
-        <div class="inform-comerc text-left">
+        <div class="info-comertial text-left">
             <div class="clearfix"></div>
-            <ul class="no-dot">
+            <ul class="margin-top-footer">
                 <div class="ul-2 {{editabletext}}" text-id="{{ site.name + '_footer_son' }}"> {{ read_text(site.name +  '_footer_son') }}</div>
-                <div class="pas-2 {{editabletext}}" text-id="{{ site.name + '_footer_22' }}"> {{ read_text(site.name +  '_footer_22') }}</div>
-                <div class="pas-2 {{editabletext}}" text-id="{{ site.name + '_footer_23' }}"> {{ read_text(site.name +  '_footer_23') }}</div>
-                <div class="pas-2 {{editabletext}}" text-id="{{ site.name + '_footer_wew' }}"> {{ read_text(site.name +  '_footer_wew') }}</div>
-                <div class="pas-2 {{editabletext}}" text-id="{{ site.name + '_lod' }}"> {{ read_text(site.name +  '_lod') }}</div>
+                <div class="footer-div-content {{editabletext}}" text-id="{{ site.name + '_footer_22' }}"> {{ read_text(site.name +  '_footer_22') }}</div>
+                <div class="footer-div-content {{editabletext}}" text-id="{{ site.name + '_footer_23' }}"> {{ read_text(site.name +  '_footer_23') }}</div>
+                <div class="footer-div-content {{editabletext}}" text-id="{{ site.name + '_footer_wew' }}"> {{ read_text(site.name +  '_footer_wew') }}</div>
+                <div class="footer-div-content {{editabletext}}" text-id="{{ site.name + '_lod' }}"> {{ read_text(site.name +  '_lod') }}</div>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-12">
+        <div class="info-comertial text-left">
+            <div class="clearfix"></div>
+            <ul class="margin-top-footer op">
+                <div class="ul-2 {{editabletext}}" text-id="{{ site.name + '_footer_son_3' }}"> {{ read_text(site.name +  '_footer_son_3') }}</div>
+                <div class="footer-div-content {{editabletext}}" text-id="{{ site.name + '_footer_ex_2' }}"> {{ read_text(site.name +  '_footer_ex_2') }}</div>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-12">
+        <div class="info-comertial text-left">
+            <div class="clearfix"></div>
+            <ul class="margin-top-footer op">
+                <div class="ul-2 {{editabletext}}" text-id="{{ site.name + '_footer_title_contact' }}"> {{ read_text(site.name +  '_footer_title_contact') }}</div>
+                <div class="footer-div-content {{editabletext}}" text-id="{{ site.name + '_footer_ex_3' }}"> {{ read_text(site.name +  '_footer_ex_3') }}</div>
+                <div class="footer-div-content {{editabletext}}" text-id="{{ site.name + '_footer_ex_5' }}"> {{ read_text(site.name +  '_footer_ex_5') }}</div>
             </ul>
         </div>
     </div>
     <div class="col-md-3 col-sm-3 col-xs-12">
-        <div class="inform-comerc-2 text-left">
-            <div class="clearfix"></div>
-            <ul class="no-dot op">
-                <div class="ul-2 {{editabletext}}" text-id="{{ site.name + '_footer_son_3' }}"> {{ read_text(site.name +  '_footer_son_3') }}</div>
-                <div class="pas-3 {{editabletext}}" text-id="{{ site.name + '_footer_ex_2' }}"> {{ read_text(site.name +  '_footer_ex_2') }}</div>
-                <div class="pas-3 {{editabletext}}" text-id="{{ site.name + '_footer_ex_3' }}"> {{ read_text(site.name +  '_footer_ex_3') }}</div>
-                <div class="pas-3 {{editabletext}}" text-id="{{ site.name + '_footer_ex_5' }}"> {{ read_text(site.name +  '_footer_ex_5') }}</div>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
         <div class=" text-left">
             <div class="clearfix"></div>
-            <ul class="no-dot d-o">
-                <div class="ul-2 pas-4 {{editabletext}}" text-id="{{ site.name + '_footer_30' }}"> {{ read_text(site.name +  '_footer_30') }}</div>
-                <div class="pas-4 {{editabletext}}" text-id="{{ site.name + '_footer_31' }}"> {{ read_text(site.name +  '_footer_31') }}</div>
+            <ul class="margin-top-footer d-o">
+                <div class="ul-2 footer-div-newsletter {{editabletext}}" text-id="{{ site.name + '_footer_30' }}"> {{ read_text(site.name +  '_footer_30') }}</div>
+                <div class="footer-div-newsletter {{editabletext}}" text-id="{{ site.name + '_footer_31' }}"> {{ read_text(site.name +  '_footer_31') }}</div>
             </ul>
         </div>
         <form action='https://forms.zohopublic.com/sytes/form/lahorquetanewsletter/formperma/GWIwrfS_weBZy88TLz_r3B6qAZEvZhshe6yDrcdVlAs/htmlRecords/submit' name='form' id='form' class="form--merge form--no-labels" method='POST' accept-charset='UTF-8' enctype='multipart/form-data' onSubmit="zf_validateandsubmitdata();">

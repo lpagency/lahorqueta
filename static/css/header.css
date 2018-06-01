@@ -266,14 +266,19 @@ li.contenedor-busacador
     outline-offset: 0px;
 }
 
-.so
+.header-item-casa
 {
     position: relative;
 }
 
-.so-2
+.header-item-terraza
 {
     width: 11%;
+}
+
+.header-item-regalo
+{
+    width: 14%;
 }
 
 .navbar-brand
@@ -391,17 +396,17 @@ li.contenedor-busacador
         width: 65%;
     }
 
-    .so-2
+    .header-item-terraza
     {
         width: 13%;
     }
 
-    .so
+    .header-item-casa
     {
         width: 10%;
     }
 
-    .so-3
+    .header-item-regalo
     {
         width: 17%;
     }
@@ -419,6 +424,11 @@ li.contenedor-busacador
         padding-left: 27px;
     }
 
+    .header-item-casa
+    {
+        width: 8%;
+    }
+
     .btn-default.carro
     {
         right: 30px;
@@ -430,9 +440,9 @@ li.contenedor-busacador
         margin-left: 14px;
     }
 
-    .so-2
+    .header-item-terraza
     {
-        width: 14%;
+        width: 12%;
     }
 
     .dropdown-movil
@@ -463,9 +473,9 @@ li.contenedor-busacador
         left: -8px;
     }
 
-    .so-3
+    .header-item-regalo
     {
-        width: 19%;
+        width: 9%;
     }
 
     input.buscador-header
@@ -486,6 +496,11 @@ li.contenedor-busacador
     {
         border-radius: inherit;
         width: 82%;
+    }
+
+    input.img-lupa
+    {
+        width: 14%;
     }
 
     .navbar-toggle
@@ -567,20 +582,20 @@ li.contenedor-busacador
         width: 100%;
     }
 
-    .so
+    .header-item-casa
     {
         margin-top: 20px;
         left: 0px;
         width: 100%;
     }
 
-    .so-2
+    .header-item-terraza
     {
         left: 0px;
         width: 100%;
     }
 
-    .so-3
+    .header-item-regalo
     {
         right: 0px;
         width: 100%;
@@ -711,6 +726,11 @@ li.contenedor-busacador
         float: left;
         margin-top: -7px;
         margin-bottom: 21px;
+    }
+
+    input.img-lupa
+    {
+        width: 18%;
     }
 
     .btn-default.carro

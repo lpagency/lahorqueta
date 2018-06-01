@@ -99,10 +99,9 @@
                 'templateOrigin': '#product_template',
                 'tag': '',
                 'ignore_stock': false,
-                'onLoad': function()
-                {
-                }
+                'onLoad': function(){}
             };
+
             $(document).ecommerce({
                 'app_public': app_public,
                 'animation': 'simple',
@@ -166,11 +165,14 @@
                 </form>
             </div>
             <div class="col-xs-12 col-md-6 col-sm-12 coli no-padding">
-                <div class="titulo-negrita {{editabletext}}" text-id="{{ site.name + '_h_contact' }}"> {{ read_text(site.name + '_h_contact') }}
+                <div class="titulo-negrita {{editabletext}}" text-id="{{ site.name + '_h_contact' }}">
+                    {{ read_text(site.name + '_h_contact') }}
                 </div>
-                <div class="titulo-claro {{editabletext}}" text-id="{{ site.name + '_h_contact_2' }}"> {{ read_text(site.name + '_h_contact_2') }}
+                <div class="titulo-claro {{editabletext}}" text-id="{{ site.name + '_h_contact_2' }}">
+                    {{ read_text(site.name + '_h_contact_2') }}
                 </div>
-                <div class="titulo-negrita {{editabletext}}" text-id="{{ site.name + '_h_contact_3' }}"> {{ read_text(site.name + '_h_contact_3') }}
+                <div class="titulo-negrita {{editabletext}}" text-id="{{ site.name + '_h_contact_3' }}">
+                    {{ read_text(site.name + '_h_contact_3') }}
                 </div>
             </div>
         </div>

@@ -69,9 +69,9 @@ $(document).ready(function()
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com',
             'https://pay.loadingplay.com');
-        var app_public = $.environmentVar(64,64,64);
+        var app_public = $.environmentVar('lahorqueta2', 'lahorqueta2', 'lahorqueta2');
         var site_name = $.environmentVar('lahorqueta2', 'lahorqueta2', 'lahorqueta2');
-  
+
 
         var config = {
             'app_public' : app_public,

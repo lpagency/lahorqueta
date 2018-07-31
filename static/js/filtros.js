@@ -20,22 +20,22 @@
                 'https://pay.loadingplay.com',
                 'https://pay.loadingplay.com',
                 'https://pay.loadingplay.com');
-            var app_public = $.environmentVar(64,64,64);
+            var app_public = $.environmentVar('lahorqueta2', 'lahorqueta2', 'lahorqueta2');
             var site_name = $.environmentVar('lahorqueta2', 'lahorqueta2', 'lahorqueta2');
-    
+
 
 
             window.config = {
                     'app_public': app_public,
                     'base_url': base_url,
-                    'products_per_page' : 9, 
+                    'products_per_page' : 9,
                     'tag': '',
                     'ignore_stock': false,
                     'infinite_scroll': false,
                     // 'maxProducts': 100,
-                    'checkout_url': checkout_url, 
+                    'checkout_url': checkout_url,
                     'operator' :'or',
-                    'onLoad': function(products) 
+                    'onLoad': function(products)
                     {
 
 
@@ -308,7 +308,7 @@ function check(tag, value)
     {
 
         var nombre = tag;
-        var block = 
+        var block =
                             '<ul class="fil-ul '+nombre+'"><li class="li-fil"><div class="ordenar-precio '+nombre+'"> '
                                 +nombre+' <i class="fa fa-times aria-hidden="true" onclick="borrar('+"'"+nombre+"'"+')"></i></div></li></ul>';
 
@@ -342,7 +342,7 @@ function check(tag, value)
 
         var nombre = tag;
         var va = value;
-        var block = 
+        var block =
                             '<ul class="fil-ul '+nombre+'"><li class="li-fil"><div class="ordenar-precio '+nombre+'"> '
                                 +va+' <i class="fa fa-times" aria-hidden="true" onclick="borrar('+"'"+nombre+"'"+','+"'"+va+"'"+')"></i></div></li></ul>';
 
